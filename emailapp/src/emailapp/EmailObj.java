@@ -81,5 +81,8 @@ public class EmailObj {
 	//set alternate email
 	
 	//change password
+	public void changePassword(String pass) {
+		password = pass;
+	}
 	
 }
