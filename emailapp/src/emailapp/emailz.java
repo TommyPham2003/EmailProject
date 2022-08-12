@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class emailz {
 	public static void main(String [] args) {
-		//get the user first and last name
+		//get the employee's first and last name
 		System.out.println("Enter your first name");
 		Scanner name = new Scanner(System.in);
 		String firstName = name.next();
