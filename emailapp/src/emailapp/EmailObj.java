@@ -101,4 +101,10 @@ public class EmailObj {
 		return password;
 	}
 	
+	//make a method to show all the information
+	public String info() {
+		return "Display Name: " + firstName + " " + lastName +
+				"Company Email: " + email +
+				"Password: " + password;
+	}
 }
