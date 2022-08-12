@@ -9,6 +9,8 @@ public class EmailObj {
 	private String password;
 	private String department;
 	private int mailCapacity;
+	//the length can be changed
+	private int passwordLength = 10;
 	private String newEmail;
 	
 	//constructor
@@ -20,6 +22,10 @@ public class EmailObj {
 		//set the department
 		department = setDepartment();
 		System.out.println("Department: " + department);
+		
+		//call a method to generate a random password
+		password = randomPass(passwordLength);
+		System.out.println("Your password is: " + password);
 	}
 	
 	//department setter
@@ -46,6 +52,21 @@ public class EmailObj {
 	}
 	
 	//generate a password
+	//the length can be changed
+	private String randomPass(int length) {
+		//make a string with all the variables that can be used in the random password
+		String passwordVariable = "ABCDEFGHIJKLMNOPQRSTUWXYZ0123456789!@#$%";
+		//make a char array with the required length to use for the random password
+		char [] password = new char[length];
+		
+		//make a for loop to generate a random password out of the variables
+		for(int index = 0; index < length; index++) {
+			int random = (int) (Math.random() * passwordVariable.length());
+			password[index] = passwordVariable.charAt(random);
+		}
+		//return the array as a string
+		return new String (password);
+	}
 	
 	//set mailbox capacity
 	
