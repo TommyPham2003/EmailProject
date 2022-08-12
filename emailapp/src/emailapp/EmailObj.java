@@ -23,15 +23,12 @@ public class EmailObj {
 		
 		//set the department
 		department = setDepartment();
-		System.out.println("Department: " + department);
 		
 		//call a method to generate a random password
 		password = randomPass(passwordLength);
-		System.out.println("Your password is: " + password);
 		
 		//generate an email
 		email = firstName.toLowerCase() + "." + lastName.toLowerCase() + "@" + department + "." + emailSuffix;
-		System.out.println("Your email is: " + email);
 	}
 	
 	//department setter
@@ -103,8 +100,8 @@ public class EmailObj {
 	
 	//make a method to show all the information
 	public String info() {
-		return "Display Name: " + firstName + " " + lastName +
-				"Company Email: " + email +
+		return "Display Name: " + firstName + " " + lastName + "\n" +
+				"Company Email: " + email + "\n" +
 				"Password: " + password;
 	}
 }

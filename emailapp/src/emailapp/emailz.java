@@ -13,7 +13,7 @@ public class emailz {
 		//Scanner last = new Scanner(System.in);
 		String lastName = name.next();
 		
-		EmailObj email1 = new EmailObj(firstName, lastName);
-		
+		EmailObj email = new EmailObj(firstName, lastName);
+		System.out.println(email.info());
 	}
 }
