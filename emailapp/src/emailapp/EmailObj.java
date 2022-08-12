@@ -12,7 +12,7 @@ public class EmailObj {
 	private int mailCapacity = 1000;
 	//the length can be changed
 	private int passwordLength = 10;
-	private String newEmail;
+	private String differentEmail;
 	//this can be changed
 	private String emailSuffix = "gmail.com";
 	//constructor
@@ -79,6 +79,9 @@ public class EmailObj {
 		mailCapacity = capacity;
 	}
 	//set alternate email
+	public void setAlternateEmail(String altEmail) {
+		differentEmail = altEmail;
+	}
 	
 	//change password
 	public void changePassword(String pass) {
