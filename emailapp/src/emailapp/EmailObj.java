@@ -88,4 +88,17 @@ public class EmailObj {
 		password = pass;
 	}
 	
+	//getters
+	public int getCapacity() {
+		return mailCapacity;
+	}
+	
+	public String getAlternateEmail() {
+		return differentEmail;
+	}
+	
+	public String getPassword() {
+		return password;
+	}
+	
 }
