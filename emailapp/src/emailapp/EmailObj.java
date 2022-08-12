@@ -9,7 +9,7 @@ public class EmailObj {
 	private String password;
 	private String department;
 	private String email;
-	private int mailCapacity;
+	private int mailCapacity = 1000;
 	//the length can be changed
 	private int passwordLength = 10;
 	private String newEmail;
@@ -75,7 +75,9 @@ public class EmailObj {
 	}
 	
 	//set mailbox capacity
-	
+	public void setCapacity(int capacity) {
+		mailCapacity = capacity;
+	}
 	//set alternate email
 	
 	//change password
