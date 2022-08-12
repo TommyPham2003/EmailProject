@@ -9,5 +9,20 @@ public class EmailObj {
 	private int mailCapacity;
 	private String newEmail;
 	
+	//constructor
+	public EmailObj(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	
+	//department
+	
+	//generate a password
+	
+	//set mailbox capacity
+	
+	//set alternate email
+	
+	//change password
 	
 }
